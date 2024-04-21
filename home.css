@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+.logo {
+    font-size: 3em;
+    padding: 0 0.3em;
+    display: block;
+    float: left;
+  }
+  
+  .firstName {
+    background-color: #0000cd    ;
+    color: #fff;
+  }
+  
+  .lastName {
+    background-color: transparent;
+    color: #0000cd    ;
+  }
+
+  .box21 h1 {
+    position: relative;
+    padding: 0.2em 0.5em;
+    background: -webkit-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
+    background: linear-gradient(to right, rgb(255, 124, 111), #ffc994);
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+    font-size: 30px
+  }
+  .box21{
+    padding: 0.5em 1em;
+    background: -moz-linear-gradient(#ffb03c, #ff708d);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    color: #FFF;
+}
+.box21 p {
+    margin: 0; 
+    padding: 0;
+    font-size: 20px
+
+}
+
+.col3 {
+  display: flex;
+}
+
+.col3 li {
+  width: calc(100% / 3);
+}
+
+ul,
+li {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.col3 img{
+  width: 300px;
+  height: 300px;
+}
+
+a.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+}
+
+a.btn-border:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 5px;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+
+  background: #000;
+}
+
+a.btn-border:hover {
+  color: #fff;
+  background: #000;
+}
+
+a.btn-border:hover:before {
+  background: #fff;
+}
+  
+  /* Set vendor-specific animation name and duration on .logo class */
+  
+  .logo {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 3s;
+    -ms-animation-name: fadein;
+    -ms-animation-duration: 3s;
+    -o-animation-name: fadein;
+    -o-animation-duration: 3s;
+    animation-name: fadein;
+    animation-duration: 3s;
+  }
+  
+  /* Set vendor-specific keyframes for animation on load 
+     Position and opacity are animated */
+  
+  @-webkit-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-moz-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-ms-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-o-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }

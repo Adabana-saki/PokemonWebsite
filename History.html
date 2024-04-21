@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Character</title>
+  <link rel="stylesheet" href="./History.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-4-1/css/9-4-1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base target="_blank" /><link rel="stylesheet" href="./pokemon-gozingtouch-x-anime-js/dist/style.css">
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+    function Click_Sub() {
+	if (document.all.div1.style.display == "none") {
+		document.all.div1.style.display = "block"
+	} else {
+		document.all.div1.style.display = "none"
+	}
+}
+
+  </script>
+</head>
+<body>
+  <header>
+  <nav  style="background-image:url(./images/1706.png)" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="./home.html">
+      <img src="./images/logo.png" width="180" height="60">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a  style="font-size: 18pt; color: #000000;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Game</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a style="font-size: 18pt; color: #000000;" class="dropdown-item" href="https://www.pokemon.com/us/pokemon-video-games">Company</a>
+            <a style="font-size: 18pt; color: #000000;" class="dropdown-item" href="./History.html">History</a>
+          </div>
+        </li>        
+          <a style="font-size: 18pt; color: #000000;" class="nav-link" href="./Character.html"><b>Character</b> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a style="font-size: 18pt; color: #000000;" class="nav-link" href="./Goods.html"><b>Goods</b> <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <main>
+    <div style="height: 86px;"></div>
+    
+
+    <section style="height: 400px;" id="wrapper">
+      <div id="title">
+        <details> <summary style="text-align: right; color: #000; font-size: 15px;" ><strong>Game History Table of Contents</strong></summary>
+        <ol style="text-align: right;font-size: 18px;" id="box">
+          <li><a href="#catch-Omantye">Catch Omantye</a>,<a href="#Introducing">Introducing</a></li>
+          <li><a href="#Red & Green">Pokémon Red & Green</a>,<a href="#Blue">Blue</a>,<a href="#Pikachu">Pikachu</a></li>
+          <li><a href="#Gold & Silver">Pokémon Gold & Silver</a>,<a href="#HeartGold & SoulSilver">HeartGold & SoulSilver</a></li>
+          <li><a href="#Crystal version">Pokémon Crystal version</a></li>
+          <li><a href="#Ruby & Sapphire">Pokémon Ruby & Sapphire</a>,<a href="#Omega Ruby & Alpha Sapphire">Omega Ruby & Alpha Sapphire</a></li>
+          <li><a href="#Fire Red & Leaf Green">Pokémon Fire Red & Leaf Green</a></li>
+          <li><a href="#Emerald">Pokémon Emerald</a></li>
+          <li><a href="#Diamond & Pearl">Pokémon Diamond & Pearl</a>,<a href="#Platinum">Platinum</a>,<a href="#Brilliant Diamond & Shining Pearl">Brilliant Diamond & Shining Pearl</a></li>
+          <li><a href="#Black & White">Pokémon Black & White</a>,<a href="#Black2 & White2">Black2 & White2</a></li>
+          <li><a href="#X & Y">Pokémon X & Y</a></li>
+          <li><a href="#Sun & Moon">Pokémon Sun & Moon</a>,<a href="#UltraSun & UltraMoon">Pokémon UltraSun & UltraMoon</a></li>
+          <li><a href="#Pikachu & Eevee">Pokémon Let's Go! Pikachu & Let's Go! Eevee</a></li>
+          <li><a href="#Sword & Shield">Pokémon Sword & Shield</a></li>
+          <li><a href="#Arceus">Pokémon LEGENDS Arceus</a></li>
+          <li><a href="#Scarlet & Violet">Pokémon Scarlet & Violet</a></li>
+
+        </ol>
+        </details>
+      </div>
+
+      <div id="#catch-Omantye" style="text-align: center; background-color: #00c6ff;">
+        <img style="height: 50px; width: 250px ;" src="./images/Catch Omanyte!.png"></div>
+  
+
+      <div id="info-button" onclick="toggleInfoScreen()">?</div>
+      <div id="info-screen" class="hidden">
+        <div id="info-shade"></div>
+        <div id="info-text">
+          <h3>Catch Omanyte:</h3>
+          <ul>
+            <li>Swipe the pokeball straight up, with just enough velocity </li>
+            <li>The smaller the green circle, the greater chance in catching omanyte!</li>
+          </ul>
+          <h3>Built with:</h3>
+          <ul>
+            <li><a href="https://zingchart.github.io/zingtouch">ZingTouch</a> - A JavaScript gesture detection library</li>
+            <li><a href="http://anime-js.com/">Anime.js</a> - a flexible yet lightweight JavaScript animation library.</li>
+          </ul>
+    
+          <h3>Brought to you by <a href="https://zingchart.com/">ZingChart</a></h3>
+          <span style="font-size: 0.8em;">Disclaimer: ZingChart does not own or is affiliated to the character Omanyte or the pokeball item. This is simply a demonstration of web technologies by people who love playing Pokemon Go!</span>
+        </div>
+    
+      </div>
+      <div id="touch-layer"></div>
+      <div id="particles"></div>
+      <div id="ring-screen">
+        <div id="ring">
+          <div id="ring-active">
+            <div id="ring-fill"></div>
+          </div>
+        </div>
+      </div>
+      <div id="screen" class="gradient-background">
+        <div id="target-container">
+          <div id="target"></div>
+        </div>
+        <div id="ball"></div>
+        <div id="output"></div>
+      </div>
+    
+    
+      <div id="capture-screen" class="gradient-background hidden">
+        <div id="capture-status" class="hidden">
+          You caught Omanyte!
+        </div>
+        <div id="poof-container" class="hidden">
+          <div id="poof"></div>
+        </div>
+        <div id="capture-confetti"></div>
+        <div id="capture-ball"></div>
+        <div id="capture-ball-button-container" class="hidden">
+          <div id="capture-ball-button"></div>
+        </div>
+      </div>
+    </section>
+    
+        <div id="Introducing" class="kakomi-tape4"><span class="title-tape4"><b>Introducing the list of all-time Pokémon games in order!</b></span>
+        <img src="./images/His1.png">
+        <p>The popular game series "Pocket Monsters (Pokémon)" presented by Nintendo announced the release of the latest series "Pokémon Scarlet & Violet" in the winter of 2022.</br> 
+          From its release in 1996 to the present, we will introduce a list of successive Pokémon games that have evolved and passed through various game hardware and still boast unabated popularity!</br> 
+          We will post the release dates of the Pokémon game series so far, successive generations, suggested retail prices, sales pages, and game overviews in order of release date, divided by generation!</br> 
+          With the release of the latest work "Pokémon Scarlet & Violet", how about replaying the series so far!</p>
+          <h1 id="Red & Green">Pokémon Red & Green</h1>
+          <p>The memorable first game that will be the first in the Pokémon series that is a big hit all over the world!</br>
+            The adventure begins in Masala Town in the Kanto region.</br></p>
+            <div class="flex">
+              <figure class="image"><img src="./images/His2.png"></figure>
+              <p>
+              Pokémon red & green have different Pokémon appearance, and there are Pokémon that appear only in one of them, so in order to collect a lot of Pokémon, it is necessary to exchange Pokémon with another version.</br>
+              Have fun with your friends and family!
+              </p>
+              </div>
+            <h5 style="text-align: center">Pokémon Red & Green Starter Pokémon</h5>
+            <ul class="col3">
+              <li><img style="height: 200px; width: 200px;" src="./images/His3.png"><h6>Bulbasaur</h6></li>
+              <li><img style="height: 200px; width: 200px;" src="./images/His4.png"><h6>Charmander</h6></li>
+              <li><img style="height: 200px; width: 200px;" src="./images/His5.png"><h6>Squirtle</h6></li>
+            </ul>
+            <table>
+              <tr>
+                <td>Release date</td>
+                <td>February 27, 1996</td>
+              </tr>
+              <tr>
+                <td>Sales site</td>
+                <td>https://amzn.to/3vdBUWc</td>
+              </tr>
+              <tr>
+                <td>Suggested retail price  </td>
+                <td>3,900 yen (excluding tax)</td>
+              </tr>
+              <tr>
+                <td>Supported hardware</td>
+                <td>Game Boy, Game Boy Color, Game Boy Advance</td>
+              </tr>
+            </table>
+            <h1 id="Blue">Pokémon Blue</h1>
+            <p>"Pokémon Blue" was released about half a year after its release on February 27, 1996.</br>
+              Although the story is the same as "Pokémon Red & Green", the graphics of Pokémon and the explanations in the Pokédex have been renewed, allowing you to enjoy the new charm of Pokémon!</p>
+              <div class="flex">
+                <figure style="height: 180px; width: 150px;" class="image"><img src="./images/His6.png"></figure>
+                <p>
+                  In addition, the appearance rate of Pokémon is different from "Pokémon Red & Green", so you can easily get Tauros and Kangaskhan!
+                </p>
+              </div>
+                <h5 style="text-align: center">Pokémon Blue Starter Pokémon</h5>
+                <ul class="col3">
+                  <li><img style="height: 200px; width: 200px;" src="./images/His3.png"><h6>Bulbasaur</h6></li>
+                  <li><img style="height: 200px; width: 200px;" src="./images/His4.png"><h6>Charmander</h6></li>
+                  <li><img style="height: 200px; width: 200px;" src="./images/His5.png"><h6>Squirtle</h6></li>
+                </ul>
+  
+                <table>
+                  <tr>
+                    <td>Release date</td>
+                    <td>October 15, 1996</td>
+                  </tr>
+                  <tr>
+                    <td>Sales site</td>
+                    <td>https://amzn.to/3t5rd6u</td>
+                  </tr>
+                  <tr>
+                    <td>Suggested retail price  </td>
+                    <td>3,000 yen (excluding tax)</td>
+                  </tr>
+                  <tr>
+                    <td>Supported hardware</td>
+                    <td>Game Boy, Game Boy Color, Game Boy Advance</td>
+                  </tr>
+                </table>
+              <h1 id="Pikachu">Pokémon Pikachu</h1>
+              <p>In "Pokémon Pikachu", you can travel with Pikachu!</br> 
+                When you talk to Pikachu, you can understand the "good mood" at that time and hear the voice!
+                </p>
+                <img src="./images/His7.png">
+                <h5 style="text-align: center">Pokémon Pikachu Starter Pokémon</h5>
+                <ul class="col3">
+                  <li><img style="height: 200px; width: 200px;" src="./images/His3.png"><h6>Bulbasaur</h6></li>
+                  <li><img style="height: 200px; width: 200px;" src="./images/His4.png"><h6>Charmander</h6></li>
+                  <li><img style="height: 200px; width: 200px;" src="./images/His5.png"><h6>Squirtle</h6></li>
+                </ul>
+  
+                <table>
+                  <tr>
+                    <td>Release date</td>
+                    <td>September 12, 1998</td>
+                  </tr>
+                  <tr>
+                    <td>Sales site</td>
+                    <td>https://amzn.to/3bxtVvF</td>
+                  </tr>
+                  <tr>
+                    <td>Suggested retail price  </td>
+                    <td>3,000 yen (excluding tax)</td>
+                  </tr>
+                  <tr>
+                    <td>Supported hardware</td>
+                    <td>Game Boy, Game Boy Color, Game Boy Advance</td>
+                  </tr>
+                </table>
+                <h1 id="Gold & Silver">Pokémon Gold & Silver</h1>
+                <p>The stage of adventure is from the Kanto region to the Johto region!</br> 
+                  Go on an adventurous journey with a Pokémon that Professor Utsugi gave you from Wakaba Town as your partner!</p>
+                  <div class="flex">
+                    <figure class="image"><img src="./images/His8.png"></figure>
+                    <p>
+                      New Pokémon that do not appear in "Pokémon Red, Green, Blue, and Pikachu" that have been sold until then are newly released!
+                    </p>
+                  </div>
+                  <h5 style="text-align: center">Pokémon Gold & Silver Starter Pokémon</h5>
+                  <ul class="col3">
+                    <li><img style="height: 200px; width: 200px;" src="./images/His9.png"><h6>Chikorita</h6></li>
+                    <li><img style="height: 200px; width: 200px;" src="./images/His10.png"><h6>Cyndaquil</h6></li>
+                    <li><img style="height: 200px; width: 200px;" src="./images/His11.png"><h6>Totodile</h6></li>
+                  </ul>
+    
+                  <table>
+                    <tr>
+                      <td>Release date</td>
+                      <td>November 21, 1999</td>
+                    </tr>
+                    <tr>
+                      <td>Sales site</td>
+                      <td>https://amzn.to/3vbjQft</td>
+                    </tr>
+                    <tr>
+                      <td>Suggested retail price  </td>
+                      <td>3,800 yen (excluding tax)</td>
+                    </tr>
+                    <tr>
+                      <td>Supported hardware</td>
+                      <td>Game Boy, Game Boy Color, Game Boy Advance</td>
+                    </tr>
+                  </table>
+                  <h1 id="Crystal version">Pokémon Crystal version</h1>
+                  <p>The story is almost the same as "Pokémon Gold & Silver", but you can choose a girl as the main character!<br>
+                    A mysterious young man, Minaki, appears, and Pokémon movements are displayed in animations.                    </p>
+                    <img src="./images/His12.png">
+                    <h5 style="text-align: center">Pokémon Ruby & Sapphire Starter Pokémon</h5>
+                    <ul class="col3">
+                      <li><img style="height: 200px; width: 200px;" src="./images/His9.png"><h6>Chikorita</h6></li>
+                      <li><img style="height: 200px; width: 200px;" src="./images/His10.png"><h6>Cyndaquil</h6></li>
+                      <li><img style="height: 200px; width: 200px;" src="./images/His11.png"><h6>Totodile</h6></li>
+                    </ul>
+      
+                    <table>
+                      <tr>
+                        <td>Release date</td>
+                        <td>December 14, 2000</td>
+                      </tr>
+                      <tr>
+                        <td>Sales site</td>
+                        <td>https://amzn.to/3kZAl9V</td>
+                      </tr>
+                      <tr>
+                        <td>Suggested retail price  </td>
+                        <td>3,800 yen (excluding tax)</td>
+                      </tr>
+                      <tr>
+                        <td>Supported hardware</td>
+                        <td>Game Boy Color, Game Boy Advance</td>
+                      </tr>
+                    </table>
+                    <h1 id="Ruby & Sapphire">Pokémon Ruby & Sapphire</h1>
+                    <p>The first game in the Pokémon series to be compatible with Game Boy Advance! </br>
+                      The hero's journey to help Dr.Odamaki begins in the rich nature of the Hoenn region!</br>
+                      In addition to a new story and map set in the Hoenn region, there are 135 new Pokémon, making collecting Pokémon even more fun!</p>
+                      <div class="flex">
+                      <figure class="image"><img src="./images/His13.png"></figure>
+                      <p>
+                        Pokémon battles are getting deeper, with the addition of "Ability" to Pokémon and the addition of "double battles".<br>
+                        There are also plenty of new fun things to do, such as the "Pokémon Contest" and making "Secret base"!
+                      </p>
+                    </div>
+                  <h5 style="text-align: center">Pokémon Ruby & Sapphire Starter Pokémon</h5>
+                  <ul class="col3">
+                    <li><img style="height: 200px; width: 200px;" src="./images/His14.png"><h6>Treecko</h6></li>
+                    <li><img style="height: 200px; width: 200px;" src="./images/His15.png"><h6>Torchic</h6></li>
+                    <li><img style="height: 200px; width: 200px;" src="./images/His16.png"><h6>Mudkip</h6></li>
+                  </ul>
+    
+                  <table>
+                    <tr>
+                      <td>Release date</td>
+                      <td>November 21, 2002</td>
+                    </tr>
+                    <tr>
+                      <td>Sales site</td>
+                      <td>https://amzn.to/3ep28iB</td>
+                    </tr>
+                    <tr>
+                      <td>Suggested retail price  </td>
+                      <td>4,800 yen (excluding tax)</td>
+                    </tr>
+                    <tr>
+                      <td>Supported hardware</td>
+                      <td>Game Boy Advance</td>
+                    </tr>
+                  </table>
+                  <h1 id="Fire Red & Leaf Green">Pokémon Fire Red & Leaf Green</h1>
+                  <p>The first remake of the Pokémon series!<br> 
+                    "Pokémon Red & Green" has been reborn as software for Game Boy Advance with various new elements! In addition to the renewed graphics, a new map has also been added to increase the scale!</p>
+                <img src="./images/His17.png">
+                <h5 style="text-align: center">Pokémon Fire Red & Leaf Green Starter Pokémon</h5>
+                <ul class="col3">
+                  <li><img style="height: 200px; width: 200px;" src="./images/His3.png"><h6>Bulbasaur</h6></li>
+                  <li><img style="height: 200px; width: 200px;" src="./images/His4.png"><h6>Charmander</h6></li>
+                  <li><img style="height: 200px; width: 200px;" src="./images/His5.png"><h6>Squirtle</h6></li>
+                </ul>
+  
+                <table>
+                  <tr>
+                    <td>Release date</td>
+                    <td>January 29, 2004</td>
+                  </tr>
+                  <tr>
+                    <td>Sales site</td>
+                    <td>https://amzn.to/3chfzOT</td>
+                  </tr>
+                  <tr>
+                    <td>Suggested retail price  </td>
+                    <td>Soft only: 3,619 yen each (excluding tax)</td>
+                  </tr>
+                  <tr>
+                    <td>Supported hardware</td>
+                    <td>Game Boy Advance</td>
+                  </tr>
+                </table>
+                <h1 id="Emerald">Pokémon Emerald</h1>
+                <p>Based on the story of "Pokémon Ruby & Sapphire", new episodes have been added to make it even more powerful!<br>
+                  The newly added function Battle Frontier is also available!
+                  </p>
+                <img src="./images/His18.png">
+              <h5 style="text-align: center">Pokémon Emerald Starter Pokémon</h5>
+              <ul class="col3">
+                <li><img style="height: 200px; width: 200px;" src="./images/His14.png"><h6>Treecko</h6></li>
+                <li><img style="height: 200px; width: 200px;" src="./images/His15.png"><h6>Torchic</h6></li>
+                <li><img style="height: 200px; width: 200px;" src="./images/His16.png"><h6>Mudkip</h6></li>
+              </ul>
+
+              <table>
+                <tr>
+                  <td>Release date</td>
+                  <td>September 16, 2004</td>
+                </tr>
+                <tr>
+                  <td>Sales site</td>
+                  <td>https://amzn.to/3t4f2Xj</td>
+                </tr>
+                <tr>
+                  <td>Suggested retail price  </td>
+                  <td>Soft only: 3,619 yen each (excluding tax)</td>
+                </tr>
+                <tr>
+                  <td>Supported hardware</td>
+                  <td>Game Boy Advance</td>
+                </tr>
+              </table>
+              <h1 id="Diamond & Pearl">Pokémon Diamond & Pearl</h1>
+              <p>"Pokémon" appears in Nintendo DS! <br>
+                The titles "Diamond", which has the ultimate hardness, and "Pearl", which represents the ultimate perfect circle, contain the strong desire of the production staff to aim for the ultimate "Pocket Monster"!</p>
+            <div class="flex">
+              <figure class="image"><img src="./images/His19.png"></figure>
+              <p>The stage for this new adventure is the Sinnoh region, which is blessed with abundant nature.<br>
+                Full of new functions using the touch screen unique to Nintendo DS!</p>
+            </div>
+            <h5 style="text-align: center">Pokémon Diamond & Pearl Starter Pokémon</h5>
+            <ul class="col3">
+              <li><img style="height: 200px; width: 200px;" src="./images/His20.png"><h6>Turtwig</h6></li>
+              <li><img style="height: 200px; width: 200px;" src="./images/His21.png"><h6>Chimchar</h6></li>
+              <li><img style="height: 200px; width: 200px;" src="./images/His22.png"><h6>Piplup</h6></li>
+            </ul>
+            <table>
+              <tr>
+                <td>Release date</td>
+                <td>September 28, 2006</td>
+              </tr>
+              <tr>
+                <td>Sales site</td>
+                <td>https://amzn.to/38m3MOj</td>
+              </tr>
+              <tr>
+                <td>Suggested retail price  </td>
+                <td> 4,571 yen each (excluding tax)</td>
+              </tr>
+              <tr>
+                <td>Supported hardware</td>
+                <td>Nintendo DS</td>
+              </tr>
+            </table>
+            <h1 id="Platinum">Pokémon Platinum</h1>
+            <p>Based on the story of "Pokémon Diamond & Pearl", various elements are powered up!<br> 
+              An epic story unfolds that extends to another world called "The Broken World" centered on Giratina!</p>
+           <img src="./images/His23.png">
+          <h5 style="text-align: center">Pokémon Platinum Starter Pokémon</h5>
+          <ul class="col3">
+            <li><img style="height: 200px; width: 200px;" src="./images/His20.png"><h6>Turtwig</h6></li>
+            <li><img style="height: 200px; width: 200px;" src="./images/His21.png"><h6>Chimchar</h6></li>
+            <li><img style="height: 200px; width: 200px;" src="./images/His22.png"><h6>Piplup</h6></li>
+          </ul>
+          <table>
+            <tr>
+              <td>Release date</td>
+              <td>September 13, 2008</td>
+            </tr>
+            <tr>
+              <td>Sales site</td>
+              <td>https://amzn.to/3epkMa1</td>
+            </tr>
+            <tr>
+              <td>Suggested retail price  </td>
+              <td> 4,800 yen each (excluding tax)</td>
+            </tr>
+            <tr>
+              <td>Supported hardware</td>
+              <td>Nintendo DS</td>
+            </tr>
+          </table>
+          <h1 id="HeartGold & SoulSilver">Pokémon HeartGold & SoulSilver</h1>
+          <p>Gameboy software "Pokémon Gold & Silver" released in 1999 reappears as "Pokémon HeartGold & SoulSilver" after 10 years!<br>
+            Set in the Johto region three years after "Pokémon Fire Red & Leaf Green", you will meet various people and Pokémon and aim to become the ultimate Pokémon Trainer!</p>
+         <img src="./images/His24.png">
+        <h5 style="text-align: center">Pokémon HeartGold & SoulSilver Starter Pokémon</h5>
+        <ul class="col3">
+          <li><img style="height: 200px; width: 200px;" src="./images/His9.png"><h6>Chikorita</h6></li>
+          <li><img style="height: 200px; width: 200px;" src="./images/His10.png"><h6>Cyndaquil</h6></li>
+          <li><img style="height: 200px; width: 200px;" src="./images/His11.png"><h6>Totodile</h6></li>
+        </ul>
+        <table>
+          <tr>
+            <td>Release date</td>
+            <td>September 12, 2009</td>
+          </tr>
+          <tr>
+            <td>Sales site</td>
+            <td>https://amzn.to/3epfs6F</td>
+          </tr>
+          <tr>
+            <td>Suggested retail price  </td>
+            <td>4,800 yen each (excluding tax)</td>
+          </tr>
+          <tr>
+            <td>Supported hardware</td>
+            <td>Nintendo DS</td>
+          </tr>
+        </table>
+
+        <h1 id="Black & White">Pokémon Black & White</h1>
+        <p>Set in a new region, the Unova region, most of the Pokémon that have already been found in the Kanto, Johto, Houen, and Sinnoh regions have disappeared, and new Pokémon and encounters with people await!</p>
+       <div class="flex">
+        <figure class="image"><img src="./images/His25.png"></figure>
+        <p>With the addition of the concept of the four seasons of spring, summer, autumn, and winter, different Pokemon appear for each season!</p>
+      </div>
+      <h5 style="text-align: center">Pokémon Black & White Starter Pokémon</h5>
+      <ul class="col3">
+        <li><img style="height: 200px; width: 200px;" src="./images/His26.png"><h6>Snivy</h6></li>
+        <li><img style="height: 200px; width: 200px;" src="./images/His27.png"><h6>Tepig</h6></li>
+        <li><img style="height: 200px; width: 200px;" src="./images/His28.png"><h6>Oshawott</h6></li>
+      </ul>
+      <table>
+        <tr>
+          <td>Release date</td>
+          <td>September 18, 2010</td>
+        </tr>
+        <tr>
+          <td>Sales site</td>
+          <td>https://amzn.to/3vblZIgv</td>
+        </tr>
+        <tr>
+          <td>Suggested retail price  </td>
+          <td>4,800 yen each (excluding tax)</td>
+        </tr>
+        <tr>
+          <td>Supported hardware</td>
+          <td>Nintendo DS</td>
+        </tr>
+      </table>
+      <h1 id="Black2 & White2">Pokémon Black2 & White2</h1>
+      <p>The first numbered work in the series!<br>
+        Set in the Isshu region two years after Pokémon Black & White! Many facilities and buildings that didn't exist two years ago have appeared!</p>     <div class="flex">
+      <figure class="image"><img src="./images/His29.png"></figure>
+      <p>Kyurem holds the key to the story, confronting him in a cave somewhere in the Unova region!</p>
+        </div>
+    <h5 style="text-align: center">Pokémon Black2 & White2  Starter Pokémon</h5>
+    <ul class="col3">
+      <li><img style="height: 200px; width: 200px;" src="./images/His26.png"><h6>Snivy</h6></li>
+      <li><img style="height: 200px; width: 200px;" src="./images/His27.png"><h6>Tepig</h6></li>
+      <li><img style="height: 200px; width: 200px;" src="./images/His28.png"><h6>Oshawott</h6></li>
+    </ul>
+    <table>
+      <tr>
+        <td>Release date</td>
+        <td>June 23, 2012</td>
+      </tr>
+      <tr>
+        <td>Sales site</td>
+        <td>https://amzn.to/3v9gZnp</td>
+      </tr>
+      <tr>
+        <td>Suggested retail price  </td>
+        <td>4,571 yen each (excluding tax)</td>
+      </tr>
+      <tr>
+        <td>Supported hardware</td>
+        <td>Nintendo DS</td>
+      </tr>
+    </table>
+    <h1 id="X & Y">Pokémon X & Y</h1>
+    <p>Set in the Kalos region, Mega Evolution, which is said to be an evolution that surpasses evolution, has appeared!</p>
+    <img style="height: 200px; width: 300px;"  src="./images/His30.png">
+  <h5 style="text-align: center">Pokémon X & Y Starter Pokémon</h5>
+  <ul class="col3">
+    <li><img style="height: 200px; width: 200px;" src="./images/His31.png"><h6>Chespin</h6></li>
+    <li><img style="height: 200px; width: 200px;" src="./images/His32.png"><h6>Fennekin</h6></li>
+    <li><img style="height: 200px; width: 200px;" src="./images/His33.png"><h6>Froakie</h6></li>
+  </ul>
+  <table>
+    <tr>
+      <td>Release date</td>
+      <td>October 12, 2013</td>
+    </tr>
+    <tr>
+      <td>Sales site</td>
+      <td>https://amzn.to/3v9gZnp</td>
+    </tr>
+    <tr>
+      <td>Suggested retail price  </td>
+      <td> 4,571 yen each (excluding tax)</td>
+    </tr>
+    <tr>
+      <td>Supported hardware</td>
+      <td>Nintendo 3DS</td>
+    </tr>
+  </table>
+  <h1 id="Omega Ruby & Alpha Sapphire">Pokémon Omega Ruby & Alpha Sapphire</h1>
+  <p>A remake of "Pokémon Ruby & Sapphire"! <br>
+    Decorating the package are the legendary Pokémon Groudon and Kyogre in "Genshikaiki"!<br> 
+    In the Hoenn region, the old and famous legend still has a continuation!</p>
+    <div class="flex">
+    <figure class="image"><img src="./images/His34.png"></figure>
+    <p>Close in on the mystery of the Mega Evolution, which temporarily releases its hidden power and unleashes power that cannot be achieved through normal evolution!</p>    </div>
+<h5 style="text-align: center">Pokémon Omega Ruby & Alpha Sapphire Starter Pokémon</h5>
+<ul class="col3">
+  <li><img style="height: 200px; width: 200px;" src="./images/His14.png"><h6>Treecko</h6></li>
+  <li><img style="height: 200px; width: 200px;" src="./images/His15.png"><h6>Torchic</h6></li>
+  <li><img style="height: 200px; width: 200px;" src="./images/His16.png"><h6>Mudkip</h6></li>
+</ul>
+<table>
+  <tr>
+    <td>Release date</td>
+    <td>November 21, 2014</td>
+  </tr>
+  <tr>
+    <td>Sales site</td>
+    <td>https://amzn.to/3v9gZnp</td>
+  </tr>
+  <tr>
+    <td>Suggested retail price  </td>
+    <td>4,571 yen each (excluding tax)</td>
+  </tr>
+  <tr>
+    <td>Supported hardware</td>
+    <td>Nintendo 3DS</td>
+  </tr>
+</table>
+<h1 id="Sun & Moon">Pokémon Sun & Moon</h1>
+<p>The setting for this new adventure is the warm islands of the Alola region!<br>
+  In the story, the mysterious existence "Ultra Beast" that threatens the Alola region is newly introduced!</p>
+  <img src="./images/His35.png">
+<h5 style="text-align: center">Pokémon Sun & Moon Starter Pokémon</h5>
+<ul class="col3">
+  <li><img style="height: 200px; width: 200px;" src="./images/His36.png"><h6>Rowlet</h6></li>
+  <li><img style="height: 200px; width: 200px;" src="./images/His37.png"><h6>Litten</h6></li>
+  <li><img style="height: 200px; width: 200px;" src="./images/His38.png"><h6>Popplio</h6></li>
+</ul>
+<table>
+  <tr>
+    <td>Release date</td>
+    <td>November 18, 2016</td>
+  </tr>
+  <tr>
+    <td>Sales site</td>
+    <td>https://amzn.to/3emGE69</td>
+  </tr>
+  <tr>
+    <td>Suggested retail price  </td>
+    <td> 4,980 yen each (excluding tax)</td>
+  </tr>
+  <tr>
+    <td>Supported hardware</td>
+    <td>Nintendo 3DS</td>
+  </tr>
+  </table>
+  <h1 id="UltraSun & UltraMoon">Pokémon UltraSun & UltraMoon</h1>
+  <p>An epic story about the Alola region and the secrets of "Necrozma" unfolds, centering on the three legendary Pokémon "Solgaleo", "Lunala" and "Necrozma"!</p>
+   <div class="flex">
+    <figure class="image"><img src="./images/His39.png"></figure>
+    <p>The hero's outfit is also new, and an unseen adventure begins.<br>  Choose a Pokémon to be your partner and travel to the world of Alola!</p>
+    </div>
+  <h5 style="text-align: center">Pokémon Sun & Moon Starter Pokémon</h5>
+  <ul class="col3">
+    <li><img style="height: 200px; width: 200px;" src="./images/His36.png"><h6>Rowlet</h6></li>
+    <li><img style="height: 200px; width: 200px;" src="./images/His37.png"><h6>Litten</h6></li>
+    <li><img style="height: 200px; width: 200px;" src="./images/His38.png"><h6>Popplio</h6></li>
+  </ul>
+  <table>
+    <tr>
+      <td>Release date</td>
+      <td>November 17, 2017</td>
+    </tr>
+    <tr>
+      <td>Sales site</td>
+      <td>https://amzn.to/3rCyquj</td>
+    </tr>
+    <tr>
+      <td>Suggested retail price  </td>
+      <td>4,980 yen each (excluding tax)</td>
+    </tr>
+    <tr>
+      <td>Supported hardware</td>
+      <td>Nintendo 3DS</td>
+    </tr>
+    </table>
+    <h1 id="Pikachu & Eevee">Pokémon Let's Go! Pikachu & Let's Go! Eevee</h1>
+    <p>Pokémon Appears on Nintendo Switch!!<br>
+      "Pokémon Let's Go! Pikachu & Let's Go! Eevee" is a remake version of "Pikachu" and has a lineup of various contents unique to Nintendo Switch!</p>
+      <img src="./images/His40.png">
+    <h5 style="text-align: center">Pokémon Let's Go! Pikachu & Let's Go! Eevee Starter Pokémon</h5>
+    <ul class="col3">
+      <li><img style="height: 200px; width: 200px;" src="./images/His41.png"><h6>Pikachu</h6></li>
+      <li><img style="height: 200px; width: 200px;" src="./images/His42.png"><h6>Eevee</h6></li>
+    </ul>
+    <table>
+      <tr>
+        <td>Release date</td>
+        <td>November 16, 2018</td>
+      </tr>
+      <tr>
+        <td>Sales site</td>
+        <td>https://amzn.to/3t503fR</td>
+      </tr>
+      <tr>
+        <td>Suggested retail price  </td>
+        <td> 6,578 yen each (excluding tax)</td>
+      </tr>
+      <tr>
+        <td>Supported hardware</td>
+        <td>Nintendo Switch</td>
+      </tr>
+      </table>
+      <h1 id="Sword & Shield">Pokémon Sword & Shield</h1>
+      <p>The stage for a new adventure is the vast Galar region!<br> 
+        A phenomenon called Dynamax, in which Pokémon become gigantic only in certain places!</p>
+      <img src="./images/His43.png">
+      <h5 style="text-align: center">Pokémon Sword & Shield Starter Pokémon</h5>
+      <ul class="col3">
+        <li><img style="height: 200px; width: 200px;" src="./images/His44.png"><h6>Grookey</h6></li>
+        <li><img style="height: 200px; width: 200px;" src="./images/His45.png"><h6>Scorbunny</h6></li>
+        <li><img style="height: 200px; width: 200px;" src="./images/His46.png"><h6>Sobble</h6></li>
+      </ul>
+      <table>
+        <tr>
+          <td>Release date</td>
+          <td>November 15, 2019</td>
+        </tr>
+        <tr>
+          <td>Sales site</td>
+          <td>https://amzn.to/3buXL3N</td>
+        </tr>
+        <tr>
+          <td>Suggested retail price  </td>
+          <td> 6,578 yen each (excluding tax)</td>
+        </tr>
+        <tr>
+          <td>Supported hardware</td>
+          <td>Nintendo Switch</td>
+        </tr>
+        </table>
+        <h1 id="Brilliant Diamond & Shining Pearl">Pokémon Brilliant Diamond & Shining Pearl</h1>
+        <p>A remake of "Diamond & Pearl"!! <br>
+          15 years after the release of "Pokémon Diamond & Pearl", which was released in 2006 and made many people, especially children, excited about adventures, nostalgic memories are revived with new graphics!</p>
+        <img src="./images/His47.png">
+        <h5 style="text-align: center">Pokémon Brilliant Diamond & Shining Pearl Starter Pokémon</h5>
+        <ul class="col3">
+          <li><img style="height: 200px; width: 200px;" src="./images/His20.png"><h6>Turtwig</h6></li>
+          <li><img style="height: 200px; width: 200px;" src="./images/His21.png"><h6>Chimchar</h6></li>
+          <li><img style="height: 200px; width: 200px;" src="./images/His22.png"><h6>Piplup</h6></li>
+        </ul>
+        <table>
+          <tr>
+            <td>Related page</td>
+            <td>https://collabo-cafe.com/events/collabo/pokemon-bdsp-arceus2021/</td>
+          </tr>
+          <tr>
+            <td>Release date</td>
+            <td>November 19, 2021</td>
+          </tr>
+          <tr>
+            <td>Sales site</td>
+            <td>https://amzn.to/3kT0JU3</td>
+          </tr>
+          <tr>
+            <td>Suggested retail price  </td>
+            <td> 6,578 yen each (excluding tax)</td>
+          </tr>
+          <tr>
+            <td>Supported hardware</td>
+            <td>Nintendo Switch</td>
+          </tr>
+          </table>
+          <h1 id="Arceus">Pokémon LEGENDS Arceus</h1>
+          <p>Arceus is a mythical Pokemon from the Sinnoh region, and is said to have created Dialga, Palkia, and Giratina, and is said to be the creator of the world.</p>
+           <div class="flex">
+            <figure class="image"><img src="./images/His48.png"></figure>
+            <p>The game content is set in the Sinnoh region of the distant past, and is an unprecedented Pokemon that combines "action" and "RPG".</p>
+            </div>
+          <h5 style="text-align: center">Pokémon LEGENDS Arceus Starter Pokémon</h5>
+          <ul class="col3">
+            <li><img style="height: 200px; width: 200px;" src="./images/His10.png"><h6>Cyndaquil</h6></li>
+            <li><img style="height: 200px; width: 200px;" src="./images/His28.png"><h6>Oshawott</h6></li>
+            <li><img style="height: 200px; width: 200px;" src="./images/His36.png"><h6>Rowlet</h6></li>
+          </ul>
+          <table>
+            <tr>
+              <td>Related page</td>
+              <td>https://collabo-cafe.com/events/collabo/pokemon-ledends-arceus2021/</td>
+            </tr>
+            <tr>
+              <td>Release date</td>
+              <td>January 28, 2022</td>
+            </tr>
+            <tr>
+              <td>Sales site</td>
+              <td>https://amzn.to/3CGqRrk</td>
+            </tr>
+            <tr>
+              <td>Suggested retail price  </td>
+              <td> 6,578 yen each (excluding tax)</td>
+            </tr>
+            <tr>
+              <td>Supported hardware</td>
+              <td>Nintendo Switch</td>
+            </tr>
+            </table>
+            <h1 id="Scarlet & Violet">Pokémon Scarlet & Violet</h1>
+            <p>It was announced at "Pokémon Presents 2022.2.27" distributed on "Pokémon Day" to commemorate the release of the first generation of "Pocket Monsters", "Pokémon Red & Green" on February 27th. Pokémon Scarlet & Violet".</p>             <div class="flex">
+              <figure class="image"><img src="./images/His49.png"></figure>
+              <p>"Pokémon Scarlet & Violet" is built in an "open world" where you can freely move around, explore and capture, and enjoy a grand adventure while watching the vast nature, towns, and wild Pokémon that spread without boundaries.<br>
+                In addition, new information was released one after another, such as the Pokémon that inhabit the Pardea region, which is the stage of "Pokémon His Scarlet & Violet", and the tools that advance Pokémon battles.<br>
+                New elements of Pokémon Scarlet & Violet<br>
+                Information on the new Pokémon "Cyclizar" has been released, including the new tools "Monomane Herb", "Onmitsu Cloak", and "Cheat Dice", which are essential for advancing Pokémon battles advantageously. A new element has appeared!</p>
+              </div>
+            <h5 style="text-align: center">Pokémon Scarlet & Violet Starter Pokémon</h5>
+            <p>New Pokémon " Feucoco", " Quaxly" and " Sprigatito" are also announced as new adventure partners.</p>
+            <ul class="col3">
+              <li><img style="height: 200px; width: 200px;" src="./images/Character1.png"><h6>Sprigatito</h6></li>
+              <li><img style="height: 200px; width: 200px;" src="./images/Character2.png"><h6>Feucoco</h6></li>
+              <li><img style="height: 200px; width: 200px;" src="./images/Character3.png"><h6>Quaxly</h6></li>
+            </ul>
+            <table>
+              <tr>
+                <td>Related Links</td>
+                <td>https://collabo-cafe.com/events/collabo/pokemon-ledends-arceus2021/</td>
+              </tr>
+              <tr>
+                <td>Release date</td>
+                <td>November 18, 2022</td>
+              </tr>
+              <tr>
+                <td>Genre</td>
+                <td>RPG</td>
+              </tr>
+              <tr>
+                <td>Supported hardware</td>
+                <td>Nintendo Switch</td>
+              </tr>
+              <tr>
+                <td>Distributed</td>
+                <td>Nintendo Co., Ltd</td>
+              </tr>
+              <tr>
+                <td>Sales form</td>
+                <td>Package version/Download version</td>
+              </tr>
+              <tr>
+                <td>Production</td>
+                <td>Game Freak Inc.</td>
+              </tr>
+              <tr>
+                <td>Number of players</td>
+                <td>1 person (competition, exchange, etc.: 2 to 4 people)</td>
+              </tr>
+              <tr>
+                <td>Communication function</td>
+                <td>Local communication support, Internet communication support</td>
+              </tr>
+              <tr>
+                <td>Supported languages</td>
+                <td>Japanese, English, Spanish, French, German, Italian, Korean, Chinese (Traditional), Chinese (Simplified)</td>
+              </tr>
+              <tr>
+                <td>Official website</td>
+                <td>https://www.pokemon.co.jp/ex/sv/ja/</td>
+              </tr>
+              </table>
+        </div>   
+  </main>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+<!-- Section: Social media -->
+
+<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  <!-- Left -->
+  <div class="me-5 d-none d-lg-block">
+    <span>Pokemon official SNS:</span>
+  </div>
+  <div>
+    <a href="https://www.facebook.com/Pokemon.Official.Taiwan/" class="me-4 link-secondary">
+      <img src="./images/facebook.png" width="50" height="50">
+    </a>
+    <a href="https://tw.portal-pokemon.com/" class="me-4 link-secondary">
+      <img src="./images/Google.webp" width="50" height="50">
+    </a>
+    <a href="https://www.youtube.com/channel/UCUsB9KTwSGgPlIARzdaKb_Q" class="me-4 link-secondary">
+      <img src="./images/YouTube.png" width="50" height="50">
+    </a>
+    <a href="https://vt.tiktok.com/ZSJVSayaq/" class="me-4 link-secondary">
+      <img src="./images/tiktok.png" width="50" height="43">
+    </a>
+  </div>
+  <!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Q&A
+        </h6>
+        <p>
+          GOOGLFORM
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Reference
+        </h6>
+        <p>
+          <a href="./Reference.html" class="text-reset">URL</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Company Information</h6>
+        <p>8F, Roppongi Roppongihiruzumoritawa(8-k, Minato Ku, Tokyo To, 106-6108, Japan</p>
+        <p>
+          <i class="fas fa-envelope me-3 text-secondary"></i>
+          〒106-6108
+        </p>
+        <p>TEL: 03-5775-9103</p>
+        <p>FAX: 03-5775-9117</p>
+      </div>
+      <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+        <h4>Location</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.66043974082!2d139.72700071468148!3d35.66073678019909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018eaf5cd33dde1%3A0x53dc97121c168887!2sPok%C3%A9mon%20Company!5e0!3m2!1szh-TW!2stw!4v1669344756666!5m2!1szh-TW!2stw" width="267" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+  © 2021 Copyright:
+  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./History.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingtouch.min.js'></script><script  src="./pokemon-gozingtouch-x-anime-js/dist/script.js"></script>
+</body>
+</html>
